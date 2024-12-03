@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar">
+    <link rel="icon" type="image/png" href="images (8).jpeg">
+<head>
+ 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="منصة زوسر التعليمية بإدارة محمد قاسم - تعلم البرمجة والتسويق الرقمي وصناعة الروبوتات. أفضل منصة عربية للتعلم عن بعد">
+        <meta name="keywords" content="محمد قاسم, منصة زوسر, محمد قاسم منصة زوسر, تعليم البرمجة, كورسات برمجة, تعلم التسويق الرقمي, صناعة الروبوتات">
+        <meta name="author" content="محمد قاسم منصة زوسر">
+        <meta property="og:title" content="منصة زوسر بإدارة محمد قاسم - المنصة العربية الأولى للتعلم عن بعد">
+        <meta property="og:description" content="انضم لمنصة زوسر مع محمد قاسم لتعلم البرمجة والتسويق الرقمي وصناعة الروبوتات">
+        <meta property="og:image" content="images (8).jpeg">
+        <title>منصة زوسر | محمد قاسم - تعلم البرمجة والتسويق الرقمي</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/png" href="images (8).jpeg">
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة زوسر - تعلم البرمجة والتسويق الرقمي</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <section id="header-image" style="background-image: url('220.png'); background-size: cover; background-position: center; height: 400px;">
+        <div class="header-content">
+            <h1>منصة زوسر - تعلم البرمجة والتسويق الرقمي</h1>
+        </div>
+    </section>
+
+    <header id="navbar">
+        <div class="navbar-container">
+            <nav>
+                <ul>
+                    <li><a href="#programming-courses">كورسات البرمجة</a></li>
+                    <li><a href="#digital-marketing-courses">كورسات التسويق الرقمي</a></li>
+                    <li><a href="#robot-making-courses">كورسات صنع الروبوتات</a></li>
+                    <li><a href="#contact">الدعم الفني</a></li>
+                    <li><a href="#" onclick="openChatBot()">🗨️</a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=%2B201154868878">📞</a></li>
+                    <li><a href="login.html" id="logout-btn">تسجيل الخروج</a></li> 
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="programming-courses" class="section-with-video">
+        <div class="section-header">
+            <h2>كورسات البرمجة</h2>
+        </div>
+        <div class="course">
+            <img src="220.png" alt="HTML & CSS" class="course-img">
+            <h3>HTML & CSS</h3>
+            <p>تعلم كيفية بناء مواقع الويب باستخدام HTML و CSS.</p>
+            <button onclick="redirectToPayment()">اشترِ الآن</button>
+        </div>
+        <div class="course">
+            <img src="220.png" alt="JavaScript" class="course-img">
+            <h3>JavaScript</h3>
+            <p>تعلّم البرمجة بلغة JavaScript.</p>
+            <button onclick="redirectToPayment()">اشترِ الآن</button>
+        </div>
+        <div class="course">
+            <img src="220.png" alt="Python" class="course-img">
+            <h3>Python</h3>
+            <p>ابدأ تعلم Python الآن.</p>
+            <button onclick="redirectToPayment()">اشترِ الآن</button>
+        </div>
+        <div class="video-background">
+            <video autoplay loop muted>
+                <source src="videos/خلفيات متحركة 4k برمجة.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <div id="chat-container" class="chat-container">
+        <div id="chat-box" class="chat-box">
+        </div>
+        <input type="text" id="user-input" class="user-input" placeholder="اكتب رسالتك هنا..." onkeydown="sendMessage(event)">
+        <button onclick="closeChatBot()">إغلاق</button>
+    </div>
+
+    <section id="digital-marketing-courses" class="section-with-video">
+        <div class="section-header">
+            <h2>كورسات التسويق الرقمي</h2>
+        </div>
+        <div class="course">
+            <img src="220.png" alt="التسويق الرقمي" class="course-img">
+            <h3>التسويق الرقمي</h3>
+            <p>تعلم أساسيات التسويق الرقمي وكيفية استخدام أدوات الإنترنت للترويج للمنتجات.</p>
+            <button onclick="redirectToPayment()">اشترِ الآن</button>
+        </div>
+        <div class="video-background">
+            <video autoplay loop muted>
+                <source src="videos/2.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <section id="robot-making-courses" class="section-with-video">
+        <div class="section-header">
+            <h2>كورسات صنع الروبوتات</h2>
+        </div>
+        <div class="course">
+            <img src="220.png" alt="كيفية صنع روبوت" class="course-img">
+            <h3>كيفية صنع روبوت</h3>
+            <p>تعلم كيفية بناء روبوتات باستخدام البرمجة والأجهزة الميكانيكية.</p>
+            <button onclick="redirectToPayment()">اشترِ الآن</button>
+        </div>
+        <div class="video-background">
+            <video autoplay loop muted>
+                <source src="videos/1.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <section id="contact" class="section-with-video">
+        <h2>الدعم الفني</h2>
+        <form>
+            <input type="text" placeholder="اسمك" required>
+            <input type="email" placeholder="بريدك الإلكتروني" required>
+            <textarea placeholder="رسالتك"></textarea>
+            <button type="submit">إرسال</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 منصة زوسر. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
